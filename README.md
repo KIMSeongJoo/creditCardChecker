@@ -8,10 +8,11 @@ check credit card number, used luhn algorithm on javascript
 - 번호의 문자열 체크 같은 경우에도 현재 딱히 신경을 안썻기떄문에 체그가 필요할거 같네요..
 
 how to use this?
-
+<pre>
 var choice_card = document.getElemnetsById('sel_card_brand');
 var card_no = document.getElemnetsById('inp_card_no');
 
 cardInfo.setChkTargetInfo(choice_card.toLowerCase());
 cardInfo.checkBaseCardNo( card_no );
 cardInfo.checkLuhn( card_no );
+</pre>
