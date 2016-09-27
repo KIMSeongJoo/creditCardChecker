@@ -1,6 +1,6 @@
 var cardInfo = {
     // 카드 브랜드별 문자수, 사용가능 앞자리 번호 ( 비자의 경우, 일본내의 house 카드를 일부 비자로 인식시키기 때문에
-    // wiki에 적용된것가 조금 다름 
+    // wiki에 적용된것가 조금 다름
     'visa' : {
         'length' : 16,
         'pattern' : /^4|^6950([0-1][0-9]|2[0-3]|70|80|8[8-9]|9[0-7])/
@@ -59,14 +59,12 @@ var cardInfo = {
             }
             tmpCount++;
         }
-
         // 이렇게 전체를 더한 결과가 10의 배수가 아닐경우 Luhn알고리즘적으로 적용되지 않으므로 올바른 번호가 아니라 판단 False를 return
         if (tmpTotal % 10 != 0) {
             return false;
         }
-        
         return true;
-    },    
+    },
     checkBaseCardNo : function( cardNo ){
         // 기본적인 체크, 길이와, 카드번호의 앞자리를 체크
         if (cardNo.length != this.length || this.pattern.test(cardNo) == false ) {
