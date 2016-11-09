@@ -74,7 +74,7 @@ var CardChecker = function() {
     };
     
     var _checkLuhnAlgorithm = function ( cardNo ){
-        
+        asdf
     };
 
 

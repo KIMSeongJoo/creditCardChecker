@@ -16,3 +16,5 @@ cardInfo.setChkTargetInfo(choice_card.toLowerCase());
 cardInfo.checkBaseCardNo( card_no );
 cardInfo.checkLuhn( card_no );
 </pre>
+
+-- git commit test from ubuntu 16.04 LTS
