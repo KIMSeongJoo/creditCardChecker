@@ -16,3 +16,5 @@ cardInfo.setChkTargetInfo(choice_card.toLowerCase());
 cardInfo.checkBaseCardNo( card_no );
 cardInfo.checkLuhn( card_no );
 </pre>
+
+-- edit master file
